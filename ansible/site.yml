@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: False
+  vars:
+    - app_version: 1.1
+  vars_files:
+    - vars/app.yml
+  include: rails.yml

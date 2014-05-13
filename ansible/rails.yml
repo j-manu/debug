@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: False
+  tasks:
+    - name: Access var from vars list
+      debug: msg="App version is {{ app_version }}"
+
+    - name: Access var from included vars file
+      debug: msg="App name is {{ app_name }}"
